@@ -1,0 +1,38 @@
+
+
+<div class="blog-container">
+    
+    <div class="blog-post" *ngFor="let event of events">
+      <div class="blog-post-header">
+        <img [src]="sanitizeImageUrl(event?.imagecloud?.imageUrl)" [width]="100" [height]="100" auto/>
+      </div>
+      <div class="blog-post-content">
+         <div class="blog-post-meta"> 
+         Date Debut: <div class="time">{{ event.date_deb | date:'yyyy-MM-dd' }}</div>
+        </div>
+        <div class="blog-post-meta">         Date fin: <div class="time">{{ event.date_fin | date:'yyyy-MM-dd' }}</div>
+    </div>
+    <div class="blog-post-meta"> 
+         Nom de l'evenement: <h2>{{ event.nom }}</h2>
+    </div>
+    <div class="blog-post-meta"> 
+        Lieu: <div class="time">{{ event.lieu }}</div>
+       </div>
+       <div class="blog-post-meta"> 
+        nombre du place: <div class="time">{{ event.nbrPlace }}</div>
+       </div>
+        <div class="blog-post-footer">
+          <a class="btn btn-success more" [routerLink]="['/reserv',event.id]">
+            <div >Reserver</div>
+            <div><i class="ion-ios-arrow-thin-right"></i></div>
+          </a>
+          <a class="btn btn-success more" [routerLink]="['/avis',event.id]">
+            <div >Avis</div>
+            <div><i class="ion-ios-arrow-thin-right"></i></div>
+          </a>
+        </div>
+        
+    </div>
+    
+  </div>
+  

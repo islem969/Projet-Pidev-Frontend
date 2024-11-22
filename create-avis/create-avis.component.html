@@ -1,0 +1,34 @@
+
+
+<div class="row">
+    <div class="card">
+      <div class="card-container">
+      <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+          <h3 class="text-center">Ajouter un commentaire</h3>
+          <hr />
+          <div class="card-body">
+            <form [formGroup]="avisForm" (submit)="addCommentToPostAndUser(eventId)">
+              <div class="new-comment mt-3">
+                  <textarea class="form-control" rows="2" placeholder="Write a comment"
+                      id="contenu" name="contenu" formControlName="contenu"
+                      required></textarea>
+
+                  <div
+                      class="form-group d-flex align-items-center justify-content-between mt-2">
+                      <button type="submit" class="btn btn-primary btn-rounded ms-auto"
+                          style="padding: 5px 20px; font-size: 16px;">
+                          <i class="fas fa-paper-plane"></i>
+                      </button>
+                  </div>
+              </div>
+          </form>
+
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    

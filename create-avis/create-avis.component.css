@@ -1,0 +1,70 @@
+.row{
+    max-width: 800px; /* or any value that fits your design */
+    margin: 80px auto;
+    padding: 20px;
+  }
+  /* Style pour la carte */
+/* Style pour la carte */
+.card {
+  background-color: #f8f9fa; /* Couleur de fond */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  padding: 20px; /* Espacement intérieur */
+}
+
+/* Style pour le conteneur de la carte */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style pour le titre */
+h3 {
+  text-align: center; /* Centrage horizontal */
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+/* Style pour le corps de la carte */
+.card-body {
+  padding: 20px; /* Espacement intérieur */
+}
+
+/* Style pour les champs de formulaire */
+.form-group {
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+/* Style pour les étiquettes */
+label {
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour les messages d'erreur */
+.text-danger {
+  color: red; /* Couleur du texte en rouge */
+}
+
+/* Style pour les champs de saisie */
+.form-control {
+  width: 100%; /* Largeur pleine */
+  padding: 10px; /* Espacement intérieur */
+  border: 1px solid #ced4da; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour le bouton de soumission */
+button[type="submit"] {
+  display: block; /* Affichage en bloc */
+  width: 100%; /* Largeur pleine */
+  padding: 10px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #dc3545; /* Couleur de fond rouge */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer; /* Curseur de souris pointer */
+  transition: background-color 0.3s; /* Transition fluide */
+}
+
+button[type="submit"]:hover {
+  background-color: #c82333; /* Couleur de fond rouge au survol */
+}
